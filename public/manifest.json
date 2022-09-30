@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Atlas Data Collector",
+  "description": "Help gather data",
+  "version": "5.2.2",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["webRequest", "storage", "tabs"],
+  "host_permissions": ["*://*.instagram.com/*", "*://*.facebook.com/*"],
+  "options_page": "options.html",
+  "devtools_page": "devtools.html"
+}
