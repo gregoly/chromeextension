@@ -3,10 +3,10 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Profile</th>
-          <th scope="col">User Name</th>
-          <th scope="col">Full Name</th>
-          <th scope="col">Mutual Friends Count</th>
+          <th scope="w-full">Profile</th>
+          <th scope="w-full">User Name</th>
+          <th scope="w-full">Full Name</th>
+          <th scope="w-full">Mutual Friends Count</th>
         </tr>
       </thead>
       <tbody>
@@ -15,8 +15,7 @@
             <img
               crossorigin="anonymous"
               :src="follower.profile_pic_url"
-              class="rounded-circle"
-              style="max-width: 25px"
+              class="rounded-full max-w-[25px]"
             />
           </td>
           <td>{{ follower.username }}</td>

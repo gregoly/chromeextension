@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: 'src/manifest.json',
       output: {
-        // manualChunks: () => 'app',
+        manualChunks: () => 'app',
       }
     },
   },

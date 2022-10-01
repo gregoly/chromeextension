@@ -1,8 +1,8 @@
 <template>
-  <div class="card w-75">
+  <div class="card w-3/4">
     <div class="card-header">Step {{ step }}) Choose {{ title }}</div>
     <div class="card-body">
-      <select class="form-select w-100 p-1" v-model="resource" @change="selected">
+      <select class="form-select w-full p-1" v-model="resource" @change="selected">
         <option value="" disabled>--{{ title }}--</option>
         <option v-for="resource in resources" :key="resource.id" :value="resource">
           {{ resource.name }}

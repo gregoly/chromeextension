@@ -22,10 +22,10 @@
     </ul>
 
     <!-- end top nav -->
-    <div class="col col-12" v-show="state == 'table'">
+    <div class="flex w-full" v-show="state == 'table'">
       <Errors v-if="error" :error="error"></Errors>
       <div class="alert alert-warning mt-2" role="alert">
-        <p class="text-justify font-weight-light">
+        <p class="text-justify font-light">
           As you scroll through likes you will see the results below. After you are done you can
           send them to Atlas web site to manage.
         </p>
@@ -33,7 +33,7 @@
       <likes-table :followers="followers" @click="clearResults"></likes-table>
     </div>
 
-    <div class="col col-12" v-show="state == 'settings'">
+    <div class="flex w-full" v-show="state == 'settings'">
       <likes :followers="followers"></likes>
     </div>
   </div>

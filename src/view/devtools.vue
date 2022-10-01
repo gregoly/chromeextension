@@ -1,8 +1,8 @@
 <template>
-  <div class="mb-10 mt-4">
+  <div class="mt-6">
     <!-- <atlas-nav></atlas-nav> -->
 
-    <div class="container-fluid pb-10">
+    <div class="w-full pb-10">
       <ul class="nav nav-tabs">
         <li class="nav-item">
           <a
@@ -35,11 +35,11 @@
       </ul>
 
       <!-- This is the instagram area -->
-      <div v-if="state == 'instagram'" class="container-fluid">
+      <div v-if="state == 'instagram'" class="w-full">
         <instagram-screen :error="error"> </instagram-screen>
       </div>
 
-      <div v-if="state == 'facebook'" class="container-fluid">
+      <div v-if="state == 'facebook'" class="w-full">
         <facebook-screen> </facebook-screen>
       </div>
 
@@ -59,7 +59,7 @@
   import Likes from '../components/Likes.vue';
   import LikesTable from '../components/LikesTable.vue';
   import Errors from '../components/Errors.vue';
-  import '../styles/bootstrap.min.css';
+  import '../styles/tailwind.css';
 
   export default {
     components: {

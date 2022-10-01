@@ -4,7 +4,7 @@
     :class="{ 'alert-error': type == 'error', 'alert-success': type != 'error' }"
     role="alert"
   >
-    <p class="text-justify font-weight-light">
+    <p class="text-justify font-light">
       <slot></slot>
     </p>
   </div>

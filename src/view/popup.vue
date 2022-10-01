@@ -1,7 +1,7 @@
 <template>
   <div>
     <atlas-nav></atlas-nav>
-    <div class="container-fluid mt-5" style="min-width: 600px; min-height: 450px">
+    <div class="w-full mt-12 min-w-[600px] min-h-[450px]">
       <h3>Welcome to Atlas Data Collector</h3>
       <div>
         Follow the aninimation below to open the DevTools area. Click
@@ -11,7 +11,7 @@
         see a video.
       </div>
       <div>
-        <img src="../assets/how_to_open.gif" class="rounded float-end w-100" />
+        <img src="../assets/how_to_open.gif" class="rounded float-right w-full" />
       </div>
     </div>
   </div>
@@ -19,7 +19,6 @@
 
 <script>
   import AtlasNav from '../components/AtlasNav.vue';
-  import '../styles/bootstrap.min.css';
 
   export default {
     name: 'popupView',
@@ -42,5 +41,4 @@
   };
 </script>
 
-<style>
-</style>
+<style></style>

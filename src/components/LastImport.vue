@@ -3,7 +3,7 @@
     <div class="card-body">
       <h5 class="card-title">Data Collected for far</h5>
       <p></p>
-      <ul class="list-group list-group-flush">
+      <ul class="list-group list-group-flush flex flex-col">
         <li class="list-group-item">So far this import has {{ lastImport.total }} records.</li>
         <li class="list-group-item">The last imported username {{ lastRecord.username }}.</li>
         <li class="list-group-item">The Full Name is {{ lastRecord.full_name }}.</li>

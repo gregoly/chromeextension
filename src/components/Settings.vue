@@ -23,10 +23,10 @@
     </form>
   </div>
 
-  <div class="mt-5">
+  <div class="mt-12">
     <h2>How to get your token</h2>
     <div>Visit the Command Center, login and you can get the token as seen in the image below.</div>
-    <img src="../assets/get_token.gif" class="mt-4 rounded float-end w-100" />
+    <img src="../assets/get_token.gif" class="mt-6 rounded float-right w-full" />
   </div>
 </template>
 

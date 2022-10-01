@@ -1,6 +1,6 @@
 <template>
-  <div class="row">
-    <div class="col col-12">
+  <div class="flex flex-wrap">
+    <div class="w-full">
       <Errors v-if="error" :error="error"></Errors>
       <!-- show the settings since they have to do this -->
 
@@ -20,8 +20,8 @@
         {{ message.message }}
       </message>
 
-      <div class="d-flex justify-content-between mb-2">
-        <div class="font-weight-light">Total: {{ this.followers.length }}</div>
+      <div class="flex justify-between mb-2">
+        <div class="font-light">Total: {{ this.followers.length }}</div>
         <div>
           <button
             type="buttom"

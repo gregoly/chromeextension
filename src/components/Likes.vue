@@ -1,6 +1,6 @@
 <template>
-  <div class="column mb-10">
-    <div class="clearfix mt-1" style="height: 2rem">
+  <div class="">
+    <div class="clearfix mt-1 h-8">
       <div
         v-if="loading"
         style="width: 1.2rem; height: 1.2rem"
@@ -14,14 +14,14 @@
     <Errors v-if="error" :error="error"></Errors>
     <Transition>
       <div v-if="initial_loading">Loading...</div>
-      <div v-else class="mb-4">
+      <div v-else class="mb-6">
         <div>
-          <div class="text-muted mb-4">You are signed in using team "{{ current_team_name }}"</div>
+          <div class="text-muted mb-6">You are signed in using team "{{ current_team_name }}"</div>
 
           <form v-on:submit.prevent v-show="!hideCreateForm">
             <div class="form">
-              <div class="row justify-content-md-center">
-                <div class="col">
+              <div class="flex md:justify-center flex-wrap">
+                <div class="w-full">
                   <Transition>
                     <Card
                       v-if="step == 'select_project'"
@@ -54,11 +54,11 @@
                     >
                     </Card>
 
-                    <div class="card w-75" v-else-if="step == 'select_ad'">
+                    <div class="card w-3/4" v-else-if="step == 'select_ad'">
                       <div class="card-header">Step 4) Choose Ad</div>
                       <div class="card-body">
                         <select
-                          class="form-select form-select-lg mb-3 w-100 p-1"
+                          class="form-select form-select-lg mb-4 w-full p-1"
                           v-model="like"
                           @change="likeSelected()"
                         >
@@ -76,14 +76,14 @@
                   </Transition>
 
                   <div class="mt-2 mb-2">
-                    <ul class="list-inline">
-                      <li class="list-inline-item" style="font-size: 14px" v-if="project">
+                    <ul class="list-none pl-0">
+                      <li class="inline-block text-sm" v-if="project">
                         {{ project.name }} <i class="bi bi-chevron-right"></i>
                       </li>
-                      <li class="list-inline-item" style="font-size: 14px" v-if="campaign">
+                      <li class="inline-block text-sm" v-if="campaign">
                         {{ campaign.name }} <i class="bi bi-chevron-right"></i>
                       </li>
-                      <li class="list-inline-item" style="font-size: 14px" v-if="ad_set">
+                      <li class="inline-block text-sm" v-if="ad_set">
                         {{ ad_set.name }}
                       </li>
                     </ul>
@@ -91,15 +91,15 @@
 
                   <!-- start info area -->
                   <Transition>
-                    <div class="card w-100" v-if="step == 'see_ad_info'">
+                    <div class="card w-full" v-if="step == 'see_ad_info'">
                       <div class="card-header">
-                        <div class="d-flex justify-content-between">
+                        <div class="flex justify-between">
                           <button
                             @click="showInfo"
                             class="btn btn-light align-middle"
                             type="button"
                           >
-                            <span class="d-inline-block text-truncate" style="max-width: 300px">
+                            <span class="inline-block text-truncate max-w-[300px]" >
                               See Info about the Ad "{{ like.name }}"
                             </span>
                             <svg
@@ -128,7 +128,7 @@
                       </div>
                       <div class="card-body" v-show="show_info">
                         <div class="alert alert-warning mt-2" role="alert">
-                          <p class="text-justify font-weight-light">
+                          <p class="text-justify font-light">
                             As you scroll through likes you will see the results below. After you
                             are done you can send them to Atlas web site to manage.
                           </p>

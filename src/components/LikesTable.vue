@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="d-flex justify-content-between mb-2">
-      <div class="font-weight-light">Total: {{ this.followers.length }}</div>
+    <div class="flex justify-between mb-2">
+      <div class="font-light">Total: {{ this.followers.length }}</div>
       <div>
         <button
           type="button"
@@ -16,11 +16,11 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Profile</th>
-          <th scope="col">User Name</th>
-          <th scope="col">Full Name</th>
-          <th scope="col">Is Private</th>
-          <th scope="col">Is Verified</th>
+          <th scope="w-full">Profile</th>
+          <th scope="w-full">User Name</th>
+          <th scope="w-full">Full Name</th>
+          <th scope="w-full">Is Private</th>
+          <th scope="w-full">Is Verified</th>
         </tr>
       </thead>
       <tbody>
@@ -29,8 +29,7 @@
             <img
               crossorigin="anonymous"
               :src="follower.profile_pic_url"
-              class="rounded-circle"
-              style="max-width: 25px"
+              class="rounded-full max-w-[25px]"
             />
           </td>
           <td>{{ follower.username }}</td>
