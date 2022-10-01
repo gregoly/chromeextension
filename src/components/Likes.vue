@@ -158,9 +158,9 @@
 </template>
 
 <script>
-  import Message from './Message';
-  import Card from './Card';
-  import Errors from './Errors';
+  import Message from './Message.vue';
+  import Card from './Card.vue';
+  import Errors from './Errors.vue';
   import _ from 'lodash';
   export default {
     components: {

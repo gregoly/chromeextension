@@ -19,6 +19,7 @@
 
 <script>
   import AtlasNav from '../components/AtlasNav.vue';
+  import '../styles/bootstrap.min.css';
 
   export default {
     name: 'popupView',
@@ -42,5 +43,4 @@
 </script>
 
 <style>
-  @import '../styles/bootstrap.min.css';
 </style>

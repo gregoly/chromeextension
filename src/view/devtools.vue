@@ -59,6 +59,7 @@
   import Likes from '../components/Likes.vue';
   import LikesTable from '../components/LikesTable.vue';
   import Errors from '../components/Errors.vue';
+  import '../styles/bootstrap.min.css';
 
   export default {
     components: {
@@ -85,7 +86,3 @@
     },
   };
 </script>
-
-<style>
-  @import '../styles/bootstrap.min.css';
-</style>

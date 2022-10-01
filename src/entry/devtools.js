@@ -6,7 +6,7 @@ import VueAxios from 'vue-axios';
 chrome.devtools.panels.create(
   'Atlas Extension',
   'Atlas Extension for exporting data',
-  'devtools.html',
+  '../pages/devtools.html',
   function (panel) {
     const app = createApp(App);
 

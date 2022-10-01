@@ -57,7 +57,7 @@
   import Likes from './Likes.vue';
   import FacebookLikesTable from './FacebookLikesTable.vue';
   import Errors from './Errors.vue';
-  import Message from './Message';
+  import Message from './Message.vue';
 
   export default {
     components: {
